@@ -1,0 +1,27 @@
+{
+  "name": "mvc_handlebar_burger_joint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kopelson/MVC_Handlebar_Burger_Joint.git"
+  },
+  "author": "Ken Kopelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kopelson/MVC_Handlebar_Burger_Joint/issues"
+  },
+  "homepage": "https://github.com/Kopelson/MVC_Handlebar_Burger_Joint#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6"
+  }
+}
