@@ -4,11 +4,12 @@
 const connection = require("./connection.js");
 
 const orm = {
-    selectAll: function() {
-    const queryString = "";
-    connection.query(queryString, [], function(err, result) {
+    selectAll: function(tableName, cb) {
+    const queryString = "SELECT * FROM " + tableName + ";";
+    connection.query(queryString, function(err, result) {
       if (err) throw err;
       console.log(result);
+      cb(result);
     });
   },
   insertOne: function() {

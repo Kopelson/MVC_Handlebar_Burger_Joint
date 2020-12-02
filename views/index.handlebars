@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row mb-n4">
+        <main class="col-12 jumbotron jumbotron-fluid">
+            <div class="container d-flex justify-content-center">
+                <img src="/assets/img/burger.png">
+                <h1 class="display-4">Eat-Da-Burger!</h1>
+                <img src="/assets/img/burger.png">
+            </div>
+        </main>
+    </div>
+    <section class="row">
+    <div class="col-6 border-right border-dark">
+    <h2>Burger List:</h2>
+    <ul class="list-group">
+        {{#each burgers}}
+        <li class="list-group-item">
+            <div class="row clearfix">
+            <h3 class="col-8 text-capitalize">{{id}}. {{burger_name}}</h3>
+            <button class="col-4 btn btn-success float-right">Devour It!</button>
+            </div> 
+        </li>
+        {{/each}}
+    </ul>
+    </div>
+    <div class="col-6">
+        <h2>Devoured List:</h2>
+    </div>
+    </section>
+    <section class="row">
+    <div class="container d-flex justify-content-center">
+        <form class="col-12 text-center">
+            <div class="row">
+            <h2 class="col-12">Submit a new burger you want to eat!</h2>
+            </div>
+            <div class="row">
+            <textarea class="col-12"></textarea>    
+            </div>
+            <div class="row  d-flex justify-content-center">
+            <button class="col-6">Submit</button>     
+            </div>
+        </form>  
+    </div>
+    
+    </section>
+</div>

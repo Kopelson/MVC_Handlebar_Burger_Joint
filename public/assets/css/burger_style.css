@@ -1,0 +1,17 @@
+body{
+    background-color: #ffca63 !important;
+}
+
+img{
+     width: 10%;
+     height: auto;
+}
+
+.jumbotron {
+    max-height: 150px;
+}
+
+h1{
+    font-family: sans-serif;
+    color: #e03e12;
+}
