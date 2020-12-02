@@ -3,23 +3,31 @@
 // require dependencies
 const connection = require("./connection.js");
 
-var orm = {
+const orm = {
     selectAll: function() {
-    var queryString = "";
+    const queryString = "";
     connection.query(queryString, [], function(err, result) {
       if (err) throw err;
       console.log(result);
     });
   },
   insertOne: function() {
-    var queryString = "";
+    const queryString = "";
     connection.query(queryString, [], function(err, result) {
       if (err) throw err;
       console.log(result);
     });
   },
   updateOne: function() {
-    var queryString = "";
+    const queryString = "";
+    connection.query(queryString, [], function(err, result) {
+        if (err) throw err;
+        console.log(result);
+      }
+    );
+  },
+  deleteOne: function() {
+    const queryString = "";
     connection.query(queryString, [], function(err, result) {
         if (err) throw err;
         console.log(result);
