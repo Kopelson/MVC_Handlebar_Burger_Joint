@@ -16,8 +16,8 @@
             {{#unless devoured}}
         <li class="list-group-item">
             <div class="row clearfix">
-            <h3 class="col-8 text-capitalize">{{id}}. {{burger_name}}</h3>
-            <button class="col-4 btn btn-success float-right">Devour It!</button>
+            <h3 class="col-8 text-capitalize">{{burger_name}}</h3>
+            <button class="col-4 btn btn-success float-right" data-id="{{id}}">Devour It!</button>
             </div> 
         </li>
             {{/unless}}
@@ -26,6 +26,19 @@
     </div>
     <div class="col-6">
         <h2>Devoured List:</h2>
+        <ul class="list-group">
+            {{#each burgers}}
+                {{#if devoured}}
+                <li class="list-group-item-danger">
+                    <div class="row clearfix">
+                    <h3 class="col-11 text-capitalize"> {{burger_name}}</h3>
+                    <button class="col-1 btn btn-danger float-right" data-id="{{id}}">X</button>
+                    </div>
+                </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+
     </div>
     </section>
     <section class="row">
