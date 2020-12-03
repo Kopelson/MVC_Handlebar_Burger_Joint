@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
     const hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
+    //console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -20,7 +20,7 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
   burger.insertOne(["burger_name"], [req.body.burger_name], function(result) {
     // Send back the ID of the new quote
-    console.log({ id: result.insertId });
+    //console.log({ id: result.insertId });
     res.redirect("/");
   });
 });
@@ -28,8 +28,8 @@ router.post("/api/burgers", function(req, res) {
 router.put("/api/burgers/:id", function(req, res) {
   const condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
-
+  //console.log("condition", condition);
+  //console.log({isDevoured : req.body.devoured})
   burger.updateOne({
     devoured: req.body.devoured
   }, condition, function(result) {
@@ -45,7 +45,7 @@ router.put("/api/burgers/:id", function(req, res) {
 router.delete("/api/burgers/:id", function(req, res) {
     const condition = "id = " + req.params.id;
   
-    console.log("condition", condition);
+    //console.log("condition", condition);
   
     burger.deleteOne({
       burger_name: req.body.devoured
