@@ -20,6 +20,23 @@ Project Link: https://rocky-sierra-82131.herokuapp.com/
 ![overview](https://user-images.githubusercontent.com/57735283/101191012-fe120280-360d-11eb-898b-06d4c5ba8b8e.PNG)
 
 ## Installation
+How do you install this on in your own enviorment? Here are some guidelines:
+
+* Clone the repository to your own device
+
+* Run schema.sql file located in db folder in MySQL Workbench
+  -Note: to have some starter burgers also run the seeds.sql file aswell
+  
+* Add your own password to the connection.js file located in config folder
+  **IMPORTANT** this is a critical step to connect to your database
+  
+* In you terminal of choice install the necessary dependencies that are located in the package.json
+
+* Start the server either through "nmp start" or "node server.js" command
+
+* Navigate to the  http://localhost:" + PORT that is specified
+
+* Enjoy the burger logger on your own machine!
 
 ## MVC
 
