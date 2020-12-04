@@ -40,6 +40,37 @@ How do you install this on in your own enviorment? Here are some guidelines:
 
 ## MVC
 
+ ### Models
+ These models fill in the necessary data that will send to the homemade ORM that will query the database that follows the CRUD concepts
+ 
+  #### Create
+    insertOne function - inserts a new burger in the database.
+  #### Read
+    selectAll function - selects all burgers in the database.
+  #### Update
+    updateOne function- changes a burger that has not be devoured to devoured.
+  #### Delete
+    deleteOne function- deletes a burger by ID.
+ 
+ ### Views
+ 
+  #### Handlebars
+    Using handlebars handle the server side html rendering by hydrating with data from the controller
+  #### jQuery
+    jQuery adds click handlers that sends ajax requests using "put" and "delete" methods
+    
+ ### Controllers
+ The controller handles the different routes the user actions and handlebars are request that follow CRUD concepts
+ 
+#### Read
+    router.get "/" - This route hydrates handlebars with data by grabbing all the burger info from the database through a get request
+#### Create
+    router.post "/api/burgers" - This route handles a form request that wants add a new burger to the database through a post request
+#### Update
+    router.put "/api/burgers/:id" - this route wants to update a burger in the database through a put request by using ID
+#### Delete
+    router.delete "/api/burgers/:id" - this route wants to delete a burger from a database through a delete request by using ID
+
 ## Credits
 * Trilogy Education Services for project setup
 
