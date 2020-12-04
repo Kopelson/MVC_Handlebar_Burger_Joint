@@ -85,11 +85,20 @@ const orm = {
       }
     );
   },
-  deleteOne: function() {
-    const queryString = "";
-    connection.query(queryString, [], function(err, result) {
+  deleteOne: function(table, condition, cb) {
+    //DELETE FROM `burgers_db`.`burgers` WHERE (`id` = '1');
+    let queryString = "DELETE FROM " + table;
+
+    queryString += " WHERE ";
+    queryString += condition;
+
+    //console.log(queryString);
+
+    connection.query(queryString, function(err, result) {
         if (err) throw err;
-        //console.log(result);
+      //console.log(result);
+
+        cb(result);
       }
     );
   }

@@ -15,10 +15,25 @@ $(function() {
         data: isDevouredState
       }).then(
         function() {
-          console.log("changed devoured to", isDevoured);
+          //console.log("changed devoured to", isDevoured);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
+
+    $(".delete-burger").on("click", function(even){
+        let id = $(this).data("id");
+        let burgerName = $(this).data("burger_name");
+        //console.log(id + " : " + burgerName);
+
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE",
+            data: burgerName
+        }).then(
+            function(){
+                location.reload();
+            }
+        )
+    })
 })

@@ -15,3 +15,11 @@ h1{
     font-family: sans-serif;
     color: #e03e12;
 }
+
+.white-background{
+    background-color: #ffca63;
+}
+
+.margin-fix{
+    margin-bottom: 250px;
+}
