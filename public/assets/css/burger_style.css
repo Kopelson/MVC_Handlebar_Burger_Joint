@@ -1,25 +1,25 @@
 body{
     background-color: #ffca63 !important;
 }
-
+/* Burger images */
 img{
      width: 10%;
      height: auto;
 }
-
+/* bootstrap class */
 .jumbotron {
     max-height: 150px;
 }
-
+/* changes the font */
 h1{
     font-family: sans-serif;
     color: #e03e12;
 }
-
+/* backgrounds */
 .white-background{
     background-color: #ffca63;
 }
-
+/* fixes floats on mobile devices */
 .margin-fix{
     margin-bottom: 250px;
 }

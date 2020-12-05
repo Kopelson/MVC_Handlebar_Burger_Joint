@@ -1,7 +1,9 @@
 // require dependencies
 const mysql = require("mysql");
 require("dotenv").config();
+// initialize a variable to store the connection
 let connection;
+//checks if jawsdb is being used on heroku or if a local instance is being ran
 if(process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -13,8 +15,7 @@ if(process.env.JAWSDB_URL) {
     database: "burgers_db"
   });
 }
-
-
+//connect to the database
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
