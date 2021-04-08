@@ -1,8 +1,6 @@
-# MVC Handlebar Burger Joint
+# MVC Handlebar Burger Joint :
 
-
-## Description
-MVC Handlebar Burger Joint is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the burger list also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page to the devoured list. The app will store every burger in a database, whether devoured or not.
+This restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the burger list also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page to the devoured list. The app will store every burger in a database, whether devoured or not.
 
 ## Table of Contents
 
